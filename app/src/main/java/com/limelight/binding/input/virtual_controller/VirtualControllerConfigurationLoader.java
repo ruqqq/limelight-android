@@ -158,7 +158,7 @@ public class VirtualControllerConfigurationLoader {
         );
 
 		controller.addElement(createDigitalButton(
-                        ControllerPacket.A_FLAG, 0, 1, "A", -1, controller, context),
+						ControllerPacket.A_FLAG, 0, 1, "A", -1, controller, context),
             getPercent(75, screen.widthPixels),
             getPercent(40, screen.heightPixels),
             getPercent(10, screen.widthPixels),
@@ -166,7 +166,7 @@ public class VirtualControllerConfigurationLoader {
 		);
 
 		controller.addElement(createDigitalButton(
-                ControllerPacket.B_FLAG, 0, 1, "B", -1, controller, context),
+						ControllerPacket.B_FLAG, 0, 1, "B", -1, controller, context),
             getPercent(85, screen.widthPixels),
             getPercent(30, screen.heightPixels),
             getPercent(10, screen.widthPixels),
@@ -189,8 +189,24 @@ public class VirtualControllerConfigurationLoader {
             getPercent(10, screen.heightPixels)
 		);
 
+		controller.addElement(createDigitalButton(
+						ControllerPacket.LB_FLAG, 0, 1, "LB", -1, controller, context),
+				getPercent(65, screen.widthPixels),
+				getPercent(40, screen.heightPixels),
+				getPercent(10, screen.widthPixels),
+				getPercent(10, screen.heightPixels)
+		);
+
+		controller.addElement(createDigitalButton(
+						ControllerPacket.RB_FLAG, 0, 1, "RB", -1, controller, context),
+				getPercent(85, screen.widthPixels),
+				getPercent(40, screen.heightPixels),
+				getPercent(10, screen.widthPixels),
+				getPercent(10, screen.heightPixels)
+		);
+
         controller.addElement(createLeftTrigger(
-                        0, "LT", -1, controller, context),
+						0, "LT", -1, controller, context),
                 getPercent(65, screen.widthPixels),
                 getPercent(20, screen.heightPixels),
                 getPercent(10, screen.widthPixels),
@@ -198,7 +214,7 @@ public class VirtualControllerConfigurationLoader {
         );
 
         controller.addElement(createRightTrigger(
-                        0, "RT", -1, controller, context),
+						0, "RT", -1, controller, context),
                 getPercent(85, screen.widthPixels),
                 getPercent(20, screen.heightPixels),
                 getPercent(10, screen.widthPixels),
@@ -220,11 +236,19 @@ public class VirtualControllerConfigurationLoader {
 		);
 
 		controller.addElement(createDigitalButton(
-                ControllerPacket.SPECIAL_BUTTON_FLAG, 0, 2, "SELECT", -1, controller, context),
-			getPercent(40, screen.widthPixels),
-			getPercent(90, screen.heightPixels),
-			getPercent(10, screen.widthPixels),
-			getPercent(10, screen.heightPixels)
+						ControllerPacket.BACK_FLAG, 0, 2, "BACK", -1, controller, context),
+				getPercent(40, screen.widthPixels),
+				getPercent(80, screen.heightPixels),
+				getPercent(10, screen.widthPixels),
+				getPercent(10, screen.heightPixels)
+		);
+
+		controller.addElement(createDigitalButton(
+						ControllerPacket.SPECIAL_BUTTON_FLAG, 0, 2, "SELECT", -1, controller, context),
+				getPercent(40, screen.widthPixels),
+				getPercent(90, screen.heightPixels),
+				getPercent(10, screen.widthPixels),
+				getPercent(10, screen.heightPixels)
 		);
 
 		controller.addElement(createDigitalButton(
